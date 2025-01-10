@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Caracteristica General */
+
+.contenedor_casual {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Titulo */
+
+.titulo_casual {
+    max-width: 50%;
+    width: 300px;
+    background: #004AAD;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.titulo_casual h1 {
+    font-family: 'Allura';
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+.titulo_casual h1:hover {
+    transform: scale(1.1);
+    background: #E9B21E;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor Datos */
+
+.contenedor_datos {
+    width: 1020px;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1em;
+    grid-template-rows: minmax(100px, auto);
+}
+
+/* Ropa Formal */
+
+.ropa_casual {
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+
+.ropa_casual .ropa_titulo {
+    width: 350px;
+    background: wheat;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 50%;
+}
+
+.ropa_casual .ropa_titulo h2 {
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+}
+
+.ropa_casual .ropa_img {
+    width: 3s80px;
+    margin: auto;
+    background: steelblue;
+}
+
+.ropa_casual .ropa_img img {
+    margin: auto;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+/* Talla y Descripcion Formal */
+
+.contenido_casual {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+
+.contenido_casual .tallas_casual {
+    width: 200px;
+    height: 200px;
+}
+
+.contenido_casual .tallas_casual .tallas_titulo {
+    margin: auto;
+    width: 150px;
+    background: thistle;
+    border-radius: 5px;
+}
+
+.contenido_casual .tallas_casual .tallas_titulo h2 {
+    padding: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenido_casual .tallas_tipo {
+    display: block;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.contenido_casual .tallas_tipo ul {
+    list-style: none;
+}
+
+.contenido_casual .tallas_tipo ul li {
+    padding: 3px;
+    text-align: center;
+}
+
+.contenido_casual .descripcion_casual {
+    width: 370px;
+    height: 200px;
+}
+
+.contenido_casual .descripcion_casual .descripcion_titulo {
+    margin: auto;
+    width: 300px;
+    background: thistle;
+    border-radius: 5px;
+}
+
+.contenido_casual .descripcion_casual .descripcion_titulo h2 {
+    padding: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenido_casual .descripcion_casual .texto_casual {
+    display: block;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.contenido_casual .descripcion_casual .texto_casual p {
+    text-align: center;
+    font-size: 15px;
+    color: sienna;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.contenido_casual .descripcion_casual .texto_casual p span {
+    font-weight: bold;
+}

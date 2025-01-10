@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+/* Tarjetas Contenido */
+
+.post_list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.post_img1{
+    background: url(/img/inicio/t1.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post_img2{
+    background: url(/img/inicio/t2.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post_img3{
+    background: url(/img/inicio/t3.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post_img4{
+    background: url(/img/inicio/t4.jpeg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0 , 0.1);
+    overflow: hidden;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0 , 0.15);
+}
+
+.post_header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .post_img1,
+.post:hover .post_img2,
+.post:hover .post_img3,
+.post:hover .post_img4{
+    transform: scale(1.1);
+}
+
+.post_body{
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+}
+
+.post_body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post_body h2{
+    margin-bottom: 15px;
+}
+
+.post_body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post_body .color_productos{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.post_body .post_link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #2b6ebb;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+}
+
+.post_body .post_link:hover{
+    background: #3378c7;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Tarjetas Responsive */
+
+@media (max-width: 720px) {
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

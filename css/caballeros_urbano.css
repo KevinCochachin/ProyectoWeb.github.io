@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+/* Caracteristica General */
+
+.contenedor_urbano {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Titulo */
+
+.titulo_urbano {
+    max-width: 50%;
+    width: 300px;
+    background: brown;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.titulo_urbano h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 10px;
+}
+
+.titulo_urbano h1:hover {
+    transform: scale(1.1);
+    background: violet;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor Datos */
+
+.contenedor_datos {
+    width: 1020px;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1em;
+    grid-template-rows: minmax(100px, auto);
+}
+
+/* Ropa Formal */
+
+.ropa_urbana {
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+
+.ropa_urbana .ropa_titulo {
+    width: 350  px;
+    background: wheat;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 50%;
+}
+
+.ropa_urbana .ropa_titulo h2 {
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+}
+
+.ropa_urbana .ropa_img {
+    width: 280px;
+    margin: auto;
+    background: steelblue;
+}
+
+.ropa_urbana .ropa_img img {
+    margin: auto;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+/* Talla y Descripcion Formal */
+
+.contenido_urbana {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    display: block;
+}
+
+.contenido_urbana .tallas_urbana {
+    width: 200px;
+    height: 200px;
+}
+
+.contenido_urbana .tallas_urbana .tallas_titulo {
+    margin: auto;
+    width: 150px;
+    background: thistle;
+    border-radius: 5px;
+}
+
+.contenido_urbana .tallas_urbana .tallas_titulo h2 {
+    padding: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenido_urbana .tallas_tipo {
+    display: block;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.contenido_urbana .tallas_tipo ul {
+    list-style: none;
+}
+
+.contenido_urbana .tallas_tipo ul li {
+    padding: 3px;
+    text-align: center;
+}
+
+.contenido_urbana .descripcion_urbana {
+    width: 370px;
+    height: 200px;
+}
+
+.contenido_urbana .descripcion_urbana .descripcion_titulo {
+    margin: auto;
+    width: 300px;
+    background: thistle;
+    border-radius: 5px;
+}
+
+.contenido_urbana .descripcion_urbana .descripcion_titulo h2 {
+    padding: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contenido_urbana .descripcion_urbana .texto_urbana {
+    display: block;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+.contenido_urbana .descripcion_urbana .texto_urbana p {
+    text-align: center;
+    font-size: 15px;
+    color: sienna;
+    letter-spacing: 1px;
+    margin-bottom: 0%;
+  
+}
+
+.contenido_urbana .descripcion_urbana .texto_urbana p span {
+    font-weight: bold;
+}

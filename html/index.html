@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/Estilos.css">	
+</head>
+<body>
+<div class="caja1">
+<form action="../php/login.php" method="post">
+<div class="formtlo">Iniciar sesión</div>
+<div class="ub1">&#128273; Ingresar usuario</div>
+
+<input type="text" name="txtusuario">
+
+<div class="ub1">&#128274; Ingresar password</div>
+
+<input type="password" name="txtcontraseña" id="txtcontraseña">
+
+<div class="ub1">
+
+<input type="checkbox" onclick="vercontraseña()" >Mostrar contraseña </div>
+
+<div class="ub1">Rol</div>
+<select name="rol">
+<option value="0" style="display:none;"><label>Seleccionar</label></option>
+<option value="Usuario">Usuario</option>
+<option value="Admin">Administrador</option>
+</select>
+
+<div align="center">
+<input type="submit" value="Ingresar" class="botones">
+<input type="reset" value="Cancelar" class="botones"> <br> <br>
+<a href="/php/registrar.php"> ¿No tienes cuenta? REGISTRATE!</a>
+</div>
+<form>
+</div>
+</body>
+<script>
+function vercontraseña(){
+    var tipo = document.getElementById("txtcontraseña");
+    if(tipo.type == "password")
+	{
+        tipo.type = "text";
+    }
+	else
+	{
+        tipo.type = "password";
+    }
+}
+</script>
+</html>

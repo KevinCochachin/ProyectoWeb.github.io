@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+/* Titulo e Imagen de Novedades */
+
+.novedades {
+    padding: 20px;
+    text-align: center;
+    height: 50px;
+    font-size: 20px;
+}
+
+.novedades .novedades_titulo{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.blackfriday{
+    padding-top: 40px;
+    margin: auto;
+    width: 50%;
+    height: 350px;
+}
+
+/* Titulo Tendencias */
+
+.titulo_tarjetas{
+    text-align: center;
+    height: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+}

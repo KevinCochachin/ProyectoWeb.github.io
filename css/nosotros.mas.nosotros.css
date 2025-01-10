@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+/* Titulo Valores */
+
+.titulo_masnos {
+    width: 400px;
+    margin: auto;
+    background: #f06363;
+    border-radius: 7px;
+    padding: 8px;
+    padding-top: -5px;
+}
+
+.titulo_masnos h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 31px;
+}
+
+/* Tarjetas Contenido */
+
+.post_masnos{
+    display: flex;
+    min-height: 59vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.post_png1{
+    background: url(/img/nosotros/seguridad.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post_png2{
+    background: url(/img/nosotros/dinero.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post_png3{
+    background: url(/img/nosotros/tiempo.png);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0 , 0.1);
+    overflow: hidden;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0 , 0.15);
+}
+
+.post_header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post:hover .post_png1,
+.post:hover .post_png2,
+.post:hover .post_png3{
+    transform: scale(1.1);
+}
+
+.post_cuerpo {
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.post_cuerpo span{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.post_cuerpo .descripcion {
+    display: inline-block;
+    color: #000;
+   
+    
+    font-weight: bold;
+}
+
+/* Tarjetas Responsive */
+
+@media (max-width: 1000px) {
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        height: 1280px;
+    }
+
+    .post_cuerpo{
+        height: 100%;
+        padding: 40px;
+        text-align: center;
+        background: #fff;
+    }
+
+    .post_png1{
+        background: url(/img/nosotros/seguridad_800.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post_png2{
+        background: url(/img/nosotros/dinero_800.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post_png3{
+        background: url(/img/nosotros/tiempo_800.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 720px) {
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        height: 1280px;
+    }
+
+    .post_cuerpo{
+        height: 100%;
+        padding: 40px;
+        text-align: center;
+        background: #fff;
+    }
+
+    .post_png1{
+        background: url(/img/nosotros/seguridad_800.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post_png2{
+        background: url(/img/nosotros/dinero_800.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post_png3{
+        background: url(/img/nosotros/tiempo_800.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 520px) {
+    .contenido{
+        grid-template-columns: repeat(1, 1fr);
+        width: 700%;
+    }
+
+    .titulo_masnos {
+        width: 250px;
+        margin: auto;
+    }
+
+    .titulo_masnos h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .post_cuerpo{
+        height: 100%;
+        padding: 40px;
+        text-align: center;
+        background: #fff;
+    }
+
+    .post_png1{
+        background: url(/img/nosotros/seguridad_600.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post_png2{
+        background: url(/img/nosotros/dinero_600.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+    .post_png3{
+        background: url(/img/nosotros/tiempo_600.png);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: .2s;
+    }
+
+}

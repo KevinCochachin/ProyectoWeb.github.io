@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* Caballeros General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+.contenedor_caballeros {
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: grid;
+}
+
+/* Titulos y Recuadros */
+
+.titulo_caballeros {
+    width: 400px;
+    background: wheat;
+    margin: auto;
+    padding: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.titulo_caballeros > h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    font-family: "Dejavu Sans";
+}
+
+.titulo_ropa ul {
+    padding: auto;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: minmax(120px, auto);
+    list-style: none;
+    margin: auto;
+}
+
+.titulo_ropa ul li {
+    width: 100%;
+    margin: auto;
+}
+
+.titulo_ropa ul li .tipo_ropa {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.titulo_ropa ul li .tipo_ropa a {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.titulo_ropa ul li .tipo_ropa a h2 {
+    font-family: "Dejavu Sans";
+}
+
+.titulo_ropa ul li .imagen_tipo {
+    padding: 6px;
+    margin: auto;
+    width: 310px;
+    height: 500px;
+    background: skyblue;
+    border-radius: 10px;
+}
+
+.titulo_ropa ul li .imagen_tipo img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
